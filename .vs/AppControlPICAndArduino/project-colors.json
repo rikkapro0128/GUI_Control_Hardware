@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d68059d2-9f36-4e9d-9672-f14ed8eab79f": {
+      "ProjectGuid": "d68059d2-9f36-4e9d-9672-f14ed8eab79f",
+      "DisplayName": "AppControlPICAndArduino",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
