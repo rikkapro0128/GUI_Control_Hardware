@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "5Vx62k+2+ByVXWuawcuAqArLO9u5rlmXkaRzjraSk2qtTTdji89Nzz1sl+W5TIvWERxX3QHFp+qRpbIRu2Z5lA==",
+  "dgSpecHash": "i3fwhj7tvz0qylxWJ1LV7KGCamkeQOS6e7k8FopPfueiiCV0mzODpIlt2pSNsR7MVQqfNUi7r5zavoa9EjShwg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Miru\\source\\repos\\AppControlPICAndArduino\\AppControlPICAndArduino\\AppControlPICAndArduino.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Miru\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Miru\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\6.0.0\\runtime.linux-arm.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\Miru\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\6.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\Miru\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\6.0.0\\runtime.linux-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\Miru\\.nuget\\packages\\runtime.native.system.io.ports\\6.0.0\\runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\Miru\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\6.0.0\\runtime.osx-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\Miru\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\6.0.0\\runtime.osx-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\Miru\\.nuget\\packages\\system.io.ports\\6.0.0\\system.io.ports.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

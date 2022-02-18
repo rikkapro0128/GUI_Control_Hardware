@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnDisconnect = new System.Windows.Forms.Button();
+            this.btnConnect = new System.Windows.Forms.Button();
+            this.statusConnect = new System.Windows.Forms.TextBox();
+            this.selectBraudrate = new System.Windows.Forms.ComboBox();
+            this.selectCOM = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -52,6 +52,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -75,11 +76,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.btnDisconnect);
+            this.groupBox1.Controls.Add(this.btnConnect);
+            this.groupBox1.Controls.Add(this.statusConnect);
+            this.groupBox1.Controls.Add(this.selectBraudrate);
+            this.groupBox1.Controls.Add(this.selectCOM);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("JetBrains Mono", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -93,84 +94,79 @@
             this.groupBox1.Text = "Communication Setup";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // button2
+            // btnDisconnect
             // 
-            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(90, 125);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button2.Size = new System.Drawing.Size(105, 31);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Disconnect";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnDisconnect.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnDisconnect.BackColor = System.Drawing.Color.Black;
+            this.btnDisconnect.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDisconnect.ForeColor = System.Drawing.Color.White;
+            this.btnDisconnect.Location = new System.Drawing.Point(90, 125);
+            this.btnDisconnect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnDisconnect.Name = "btnDisconnect";
+            this.btnDisconnect.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnDisconnect.Size = new System.Drawing.Size(105, 31);
+            this.btnDisconnect.TabIndex = 10;
+            this.btnDisconnect.Text = "Disconnect";
+            this.btnDisconnect.UseVisualStyleBackColor = false;
+            this.btnDisconnect.Click += new System.EventHandler(this.btnDisconnect_Click);
             // 
-            // button1
+            // btnConnect
             // 
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(8, 125);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button1.Size = new System.Drawing.Size(75, 31);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Connect";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnConnect.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnConnect.BackColor = System.Drawing.Color.Black;
+            this.btnConnect.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnConnect.ForeColor = System.Drawing.Color.White;
+            this.btnConnect.Location = new System.Drawing.Point(8, 125);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnConnect.Size = new System.Drawing.Size(75, 31);
+            this.btnConnect.TabIndex = 6;
+            this.btnConnect.Text = "Connect";
+            this.btnConnect.UseVisualStyleBackColor = false;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
-            // textBox1
+            // statusConnect
             // 
-            this.textBox1.BackColor = System.Drawing.Color.LightCoral;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox1.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.Firebrick;
-            this.textBox1.Location = new System.Drawing.Point(9, 95);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(186, 16);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.Text = "Disconnected!";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.statusConnect.BackColor = System.Drawing.Color.LightCoral;
+            this.statusConnect.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.statusConnect.Cursor = System.Windows.Forms.Cursors.Default;
+            this.statusConnect.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.statusConnect.ForeColor = System.Drawing.Color.Firebrick;
+            this.statusConnect.Location = new System.Drawing.Point(9, 95);
+            this.statusConnect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.statusConnect.Name = "statusConnect";
+            this.statusConnect.ReadOnly = true;
+            this.statusConnect.Size = new System.Drawing.Size(186, 16);
+            this.statusConnect.TabIndex = 9;
+            this.statusConnect.Text = "Disconnected!";
+            this.statusConnect.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.statusConnect.TextChanged += new System.EventHandler(this.statusConnect_TextChanged);
             // 
-            // comboBox2
+            // selectBraudrate
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.White;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "1200",
-            "2400",
-            "4800",
-            "9600",
-            "19200",
-            "38400"});
-            this.comboBox2.Location = new System.Drawing.Point(89, 57);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(106, 24);
-            this.comboBox2.TabIndex = 8;
-            this.comboBox2.Text = "Choose";
+            this.selectBraudrate.BackColor = System.Drawing.Color.White;
+            this.selectBraudrate.FormattingEnabled = true;
+            this.selectBraudrate.Location = new System.Drawing.Point(89, 57);
+            this.selectBraudrate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.selectBraudrate.Name = "selectBraudrate";
+            this.selectBraudrate.Size = new System.Drawing.Size(106, 24);
+            this.selectBraudrate.TabIndex = 8;
+            this.selectBraudrate.Text = "Choose";
             // 
-            // comboBox1
+            // selectCOM
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(89, 27);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBox1.Size = new System.Drawing.Size(106, 24);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.Tag = "Choose";
-            this.comboBox1.Text = "Choose";
+            this.selectCOM.BackColor = System.Drawing.Color.White;
+            this.selectCOM.FormattingEnabled = true;
+            this.selectCOM.Location = new System.Drawing.Point(89, 27);
+            this.selectCOM.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.selectCOM.Name = "selectCOM";
+            this.selectCOM.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.selectCOM.Size = new System.Drawing.Size(106, 24);
+            this.selectCOM.TabIndex = 0;
+            this.selectCOM.Tag = "Choose";
+            this.selectCOM.Text = "Choose";
+            this.selectCOM.SelectedIndexChanged += new System.EventHandler(this.selectCOM_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -387,6 +383,10 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // folderBrowserDialog1
+            // 
+            this.folderBrowserDialog1.HelpRequest += new System.EventHandler(this.folderBrowserDialog1_HelpRequest);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -423,13 +423,13 @@
         private GroupBox groupBox2;
         private GroupBox groupBox3;
         private GroupBox groupBox4;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
+        private ComboBox selectBraudrate;
+        private ComboBox selectCOM;
         private Label label3;
         private Label label2;
-        private TextBox textBox1;
-        private Button button1;
-        private Button button2;
+        private TextBox statusConnect;
+        private Button btnConnect;
+        private Button btnDisconnect;
         private Label label4;
         private TextBox textBox2;
         private Button button4;
@@ -441,5 +441,6 @@
         private Button button5;
         private TextBox textBox4;
         private Label label6;
+        private FolderBrowserDialog folderBrowserDialog1;
     }
 }
