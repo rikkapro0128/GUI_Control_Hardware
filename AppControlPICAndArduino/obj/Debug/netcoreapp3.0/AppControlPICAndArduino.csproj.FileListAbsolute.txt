@@ -1,0 +1,8 @@
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\obj\Debug\netcoreapp3.0\AppControlPICAndArduino.csproj.AssemblyReference.cache
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\obj\Debug\netcoreapp3.0\AppControlPICAndArduino.Form1.resources
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\obj\Debug\netcoreapp3.0\AppControlPICAndArduino.Properties.Resources.resources
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\obj\Debug\netcoreapp3.0\AppControlPICAndArduino.csproj.GenerateResource.cache
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\obj\Debug\netcoreapp3.0\AppControlPICAndArduino.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\obj\Debug\netcoreapp3.0\AppControlPICAndArduino.AssemblyInfoInputs.cache
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\obj\Debug\netcoreapp3.0\AppControlPICAndArduino.AssemblyInfo.cs
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\obj\Debug\netcoreapp3.0\AppControlPICAndArduino.csproj.CoreCompileInputs.cache
