@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -42,21 +43,27 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.numReceived = new System.Windows.Forms.TextBox();
+            this.exitApp = new System.Windows.Forms.Button();
+            this.sendData = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.contentSend = new System.Windows.Forms.TextBox();
+            this.permitData = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.offLed = new System.Windows.Forms.Button();
+            this.onLed = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.console = new System.Windows.Forms.RichTextBox();
+            this.typeBoard = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -235,12 +242,12 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.button6);
-            this.groupBox3.Controls.Add(this.button5);
-            this.groupBox3.Controls.Add(this.textBox4);
+            this.groupBox3.Controls.Add(this.numReceived);
+            this.groupBox3.Controls.Add(this.exitApp);
+            this.groupBox3.Controls.Add(this.sendData);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.textBox3);
-            this.groupBox3.Controls.Add(this.checkBox1);
+            this.groupBox3.Controls.Add(this.contentSend);
+            this.groupBox3.Controls.Add(this.permitData);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Font = new System.Drawing.Font("JetBrains Mono", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.Location = new System.Drawing.Point(443, 35);
@@ -253,46 +260,53 @@
             this.groupBox3.Text = "Data Send / Receive";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // button6
+            // numReceived
             // 
-            this.button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button6.BackColor = System.Drawing.Color.Black;
-            this.button6.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(6, 125);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button6.Size = new System.Drawing.Size(200, 31);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "Exit Program";
-            this.button6.UseVisualStyleBackColor = false;
+            this.numReceived.BackColor = System.Drawing.Color.LightGreen;
+            this.numReceived.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numReceived.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.numReceived.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.numReceived.ForeColor = System.Drawing.Color.Black;
+            this.numReceived.Location = new System.Drawing.Point(68, 60);
+            this.numReceived.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.numReceived.Name = "numReceived";
+            this.numReceived.ReadOnly = true;
+            this.numReceived.Size = new System.Drawing.Size(137, 16);
+            this.numReceived.TabIndex = 17;
+            this.numReceived.Text = "0";
+            this.numReceived.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button5
+            // exitApp
             // 
-            this.button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button5.BackColor = System.Drawing.Color.Black;
-            this.button5.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(6, 88);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button5.Size = new System.Drawing.Size(200, 31);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "Send Data";
-            this.button5.UseVisualStyleBackColor = false;
+            this.exitApp.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.exitApp.BackColor = System.Drawing.Color.Black;
+            this.exitApp.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.exitApp.ForeColor = System.Drawing.Color.White;
+            this.exitApp.Location = new System.Drawing.Point(6, 125);
+            this.exitApp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.exitApp.Name = "exitApp";
+            this.exitApp.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.exitApp.Size = new System.Drawing.Size(200, 31);
+            this.exitApp.TabIndex = 16;
+            this.exitApp.Text = "Exit Program";
+            this.exitApp.UseVisualStyleBackColor = false;
+            this.exitApp.Click += new System.EventHandler(this.exitApp_Click);
             // 
-            // textBox4
+            // sendData
             // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(68, 56);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(138, 23);
-            this.textBox4.TabIndex = 14;
+            this.sendData.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.sendData.BackColor = System.Drawing.Color.Black;
+            this.sendData.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.sendData.ForeColor = System.Drawing.Color.White;
+            this.sendData.Location = new System.Drawing.Point(6, 88);
+            this.sendData.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.sendData.Name = "sendData";
+            this.sendData.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.sendData.Size = new System.Drawing.Size(200, 31);
+            this.sendData.TabIndex = 15;
+            this.sendData.Text = "Send Data";
+            this.sendData.UseVisualStyleBackColor = false;
+            this.sendData.Click += new System.EventHandler(this.sendData_Click);
             // 
             // label6
             // 
@@ -304,28 +318,29 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Receive";
             // 
-            // textBox3
+            // contentSend
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(68, 27);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PlaceholderText = "Write here...";
-            this.textBox3.Size = new System.Drawing.Size(138, 23);
-            this.textBox3.TabIndex = 11;
+            this.contentSend.BackColor = System.Drawing.Color.White;
+            this.contentSend.ForeColor = System.Drawing.Color.Black;
+            this.contentSend.Location = new System.Drawing.Point(68, 27);
+            this.contentSend.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.contentSend.Name = "contentSend";
+            this.contentSend.PlaceholderText = "Write here...";
+            this.contentSend.Size = new System.Drawing.Size(138, 23);
+            this.contentSend.TabIndex = 11;
+            this.contentSend.TextChanged += new System.EventHandler(this.contentSend_textChanged);
             // 
-            // checkBox1
+            // permitData
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(37, 27);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.checkBox1.Size = new System.Drawing.Size(25, 24);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.permitData.AutoSize = true;
+            this.permitData.Location = new System.Drawing.Point(37, 27);
+            this.permitData.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.permitData.Name = "permitData";
+            this.permitData.Padding = new System.Windows.Forms.Padding(5);
+            this.permitData.Size = new System.Drawing.Size(25, 24);
+            this.permitData.TabIndex = 6;
+            this.permitData.UseVisualStyleBackColor = true;
+            this.permitData.CheckedChanged += new System.EventHandler(this.permitData_CheckedChanged);
             // 
             // label5
             // 
@@ -340,8 +355,9 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.button4);
-            this.groupBox4.Controls.Add(this.button3);
+            this.groupBox4.Controls.Add(this.typeBoard);
+            this.groupBox4.Controls.Add(this.offLed);
+            this.groupBox4.Controls.Add(this.onLed);
             this.groupBox4.Font = new System.Drawing.Font("JetBrains Mono", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox4.Location = new System.Drawing.Point(227, 105);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -352,40 +368,88 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Led Control";
             // 
-            // button4
+            // offLed
             // 
-            this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button4.BackColor = System.Drawing.Color.Black;
-            this.button4.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(119, 55);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button4.Size = new System.Drawing.Size(75, 31);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "OFF";
-            this.button4.UseVisualStyleBackColor = false;
+            this.offLed.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.offLed.BackColor = System.Drawing.Color.Black;
+            this.offLed.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.offLed.ForeColor = System.Drawing.Color.White;
+            this.offLed.Location = new System.Drawing.Point(103, 52);
+            this.offLed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.offLed.Name = "offLed";
+            this.offLed.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.offLed.Size = new System.Drawing.Size(89, 31);
+            this.offLed.TabIndex = 7;
+            this.offLed.Text = "OFF";
+            this.offLed.UseVisualStyleBackColor = false;
+            this.offLed.Click += new System.EventHandler(this.offLed_Click);
             // 
-            // button3
+            // onLed
             // 
-            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button3.BackColor = System.Drawing.Color.Black;
-            this.button3.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(119, 18);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button3.Size = new System.Drawing.Size(75, 31);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "ON";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.onLed.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.onLed.BackColor = System.Drawing.Color.Black;
+            this.onLed.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.onLed.ForeColor = System.Drawing.Color.White;
+            this.onLed.Location = new System.Drawing.Point(8, 52);
+            this.onLed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.onLed.Name = "onLed";
+            this.onLed.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.onLed.Size = new System.Drawing.Size(89, 31);
+            this.onLed.TabIndex = 7;
+            this.onLed.Text = "ON";
+            this.onLed.UseVisualStyleBackColor = false;
+            this.onLed.Click += new System.EventHandler(this.onLed_Click);
             // 
             // folderBrowserDialog1
             // 
             this.folderBrowserDialog1.HelpRequest += new System.EventHandler(this.folderBrowserDialog1_HelpRequest);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox5.Controls.Add(this.console);
+            this.groupBox5.Font = new System.Drawing.Font("JetBrains Mono", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox5.Location = new System.Drawing.Point(12, 213);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox5.Size = new System.Drawing.Size(643, 198);
+            this.groupBox5.TabIndex = 7;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Data Send / Receive";
+            // 
+            // console
+            // 
+            this.console.Location = new System.Drawing.Point(9, 22);
+            this.console.Name = "console";
+            this.console.Size = new System.Drawing.Size(627, 170);
+            this.console.TabIndex = 8;
+            this.console.Text = "";
+            this.console.TextChanged += new System.EventHandler(this.console_TextChanged);
+            // 
+            // typeBoard
+            // 
+            this.typeBoard.BackColor = System.Drawing.Color.White;
+            this.typeBoard.FormattingEnabled = true;
+            this.typeBoard.Location = new System.Drawing.Point(8, 22);
+            this.typeBoard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.typeBoard.Name = "typeBoard";
+            this.typeBoard.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.typeBoard.Size = new System.Drawing.Size(184, 24);
+            this.typeBoard.TabIndex = 8;
+            this.typeBoard.Tag = "Choose";
+            this.typeBoard.Text = "Choose";
+            this.typeBoard.SelectedIndexChanged += new System.EventHandler(this.typeBoard_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -393,7 +457,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(667, 208);
+            this.ClientSize = new System.Drawing.Size(662, 423);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -411,6 +476,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,15 +498,20 @@
         private Button btnDisconnect;
         private Label label4;
         private TextBox textBox2;
-        private Button button4;
-        private Button button3;
-        private CheckBox checkBox1;
+        private Button offLed;
+        private Button onLed;
+        private CheckBox permitData;
         private Label label5;
-        private TextBox textBox3;
-        private Button button6;
-        private Button button5;
-        private TextBox textBox4;
+        private TextBox contentSend;
+        private Button exitApp;
+        private Button sendData;
         private Label label6;
         private FolderBrowserDialog folderBrowserDialog1;
+        private ContextMenuStrip contextMenuStrip1;
+        private ContextMenuStrip contextMenuStrip2;
+        private GroupBox groupBox5;
+        private RichTextBox console;
+        private TextBox numReceived;
+        private ComboBox typeBoard;
     }
 }

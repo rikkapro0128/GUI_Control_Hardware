@@ -1,0 +1,14 @@
+C:\Users\Miru\Documents\BuildAppControlDevice\AppControlPICAndArduino.exe
+C:\Users\Miru\Documents\BuildAppControlDevice\AppControlPICAndArduino.dll
+C:\Users\Miru\Documents\BuildAppControlDevice\AppControlPICAndArduino.deps.json
+C:\Users\Miru\Documents\BuildAppControlDevice\AppControlPICAndArduino.runtimeconfig.json
+C:\Users\Miru\Documents\BuildAppControlDevice\AppControlPICAndArduino.pdb
+C:\Users\Miru\Documents\BuildAppControlDevice\Newtonsoft.Json.dll
+C:\Users\Miru\Documents\BuildAppControlDevice\System.IO.Ports.dll
+C:\Users\Miru\Documents\BuildAppControlDevice\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\Miru\Documents\BuildAppControlDevice\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\Miru\Documents\BuildAppControlDevice\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\Miru\Documents\BuildAppControlDevice\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\Miru\Documents\BuildAppControlDevice\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\Miru\Documents\BuildAppControlDevice\runtimes\unix\lib\net6.0\System.IO.Ports.dll
+C:\Users\Miru\Documents\BuildAppControlDevice\runtimes\win\lib\net6.0\System.IO.Ports.dll

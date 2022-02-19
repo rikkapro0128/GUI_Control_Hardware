@@ -1,0 +1,14 @@
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\bin\Release\net6.0-windows\publish\AppControlPICAndArduino.exe
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\bin\Release\net6.0-windows\publish\AppControlPICAndArduino.dll
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\bin\Release\net6.0-windows\publish\AppControlPICAndArduino.deps.json
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\bin\Release\net6.0-windows\publish\AppControlPICAndArduino.runtimeconfig.json
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\bin\Release\net6.0-windows\publish\AppControlPICAndArduino.pdb
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\bin\Release\net6.0-windows\publish\Newtonsoft.Json.dll
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\bin\Release\net6.0-windows\publish\System.IO.Ports.dll
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\bin\Release\net6.0-windows\publish\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\bin\Release\net6.0-windows\publish\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\bin\Release\net6.0-windows\publish\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\bin\Release\net6.0-windows\publish\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\bin\Release\net6.0-windows\publish\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\bin\Release\net6.0-windows\publish\runtimes\unix\lib\net6.0\System.IO.Ports.dll
+C:\Users\Miru\source\repos\AppControlPICAndArduino\AppControlPICAndArduino\bin\Release\net6.0-windows\publish\runtimes\win\lib\net6.0\System.IO.Ports.dll
